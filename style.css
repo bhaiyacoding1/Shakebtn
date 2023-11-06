@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: auto;
+    display: grid;
+    place-items: center;
+    background-color: black;
+}
+.btn{
+    padding: 20px 30px;
+    color: aqua;
+    border: 2px solid aqua;
+    background-color: transparent;
+    text-transform: capitalize;
+
+}
+.btn:hover{
+    color: rgb(128, 0, 255);
+    border: 2px solid rgb(128, 0, 255);
+    animation: shake .2s linear;
+}
+@keyframes shake{
+    0%{
+        rotate: 20deg;
+    }
+     50%{
+        rotate: -20deg;
+    }
+    100%{
+        rotate: 20deg;
+    }
+}
